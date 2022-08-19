@@ -1,0 +1,267 @@
+.page {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+  background-color: #2b2b2b;
+}
+
+.logo__img {
+  width: 249px;
+  height: 40px;
+}
+
+.header__menu {
+  display: flex;
+  gap: 30px;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.header__link:hover {
+  color: #f38e1f;
+  transition: 0.4s;
+}
+
+/* main */
+
+.main {
+  position: relative;
+  z-index: 1;
+  min-height: 800px;
+  background-color: #2b2b2b;
+}
+
+.main.main::before {
+  content: '';
+  background-image: url(./images/Vector.svg);
+  height: 600px;
+  width: 345px;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.main.main::after {
+  content: '';
+  background-image: url(./images/main-background.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.container_place_main {
+  padding: 200px 0 224px;
+  position: relative;
+}
+
+.container_place_main::after {
+  content: '';
+  border-left: 1px solid #ffffff;
+  position: absolute;
+  min-height: 150px;
+  top: 0;
+  left: 0;
+}
+
+.container_place_main::before {
+  content: '';
+  border-left: 1px solid #ffffff;
+  position: absolute;
+  min-height: 190px;
+  bottom: -12px;
+  left: 4px;
+  z-index: 5;
+}
+
+.circle::before {
+  content: '';
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  bottom: -23px;
+  left: -1px;
+  z-index: 5;
+}
+
+.main__title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  margin: 0 0 20px 0;
+  max-width: 825px;
+  width: 100%;
+}
+
+.main__subtitle {
+  color: #fff;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0;
+  max-width: 665px;
+  width: 100%;
+}
+
+/* main-info */
+
+.main-info {
+  background-image: url(./images/main-info-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 0;
+}
+
+.main-info__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  color: #2b2b2b;
+  margin-bottom: 40px;
+}
+
+.main-info__subtitle {
+  margin: 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  color: #f38e1f;
+  margin-bottom: 100px;
+}
+
+.main-info__paragraph {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #99a2ad;
+}
+
+/* footer */
+
+.footer {
+  background-color: #2b2b2b;
+  padding: 100px 0;
+}
+
+.container_place_footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left h3 {
+  margin: 0;
+  font-size: 14px;
+  line-height: 17px;
+  color: #e5e5e5;
+  padding-bottom: 15px;
+  font-weight: 400;
+  max-width: 540px;
+  width: 100%;
+}
+
+.contacts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-left li {
+  margin: 0;
+  font-size: 12px;
+  line-height: 15px;
+  color: #e5e5e5;
+  margin-top: 15px;
+}
+
+.footer-left li a {
+  color: #e5e5e5;
+}
+
+.footer-left li a:first-child {
+  text-decoration: none;
+}
+
+.footer-left li a:hover {
+  color: #f38e1f;
+  transition: 0.4s;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.social-links {
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+}
+
+.social-link {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.footer-right p {
+  margin: 30px 0 15px;
+  color: #e5e5e5;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.footer__line {
+  background-image: url(./images/footer-line.svg);
+  background-size: cover;
+  background-position: right;
+  max-width: 540px;
+  width: 100%;
+  height: 11px;
+}
+
+/* search */
+
+.search {
+  max-height: 155px;
+}
+
+input {
+  margin: 50px 0;
+  display: block;
+}
