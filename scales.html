@@ -15,7 +15,7 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body class="page">
+  <body>
     <!-- 
                         /\_____/\
                        /  o   o  \
@@ -25,7 +25,7 @@
                      ( (  )   (  ) )
                     (__(__)___(__)__)
                 -->
-    <header>
+    <header class="header">
       <a class="logo" href="#">
         <img class="logo__img" src="./images/logo.svg" alt="Нейростатус" />
       </a>
@@ -37,16 +37,61 @@
         <a class="header__link" href="#">Вопрос-ответ</a>
       </nav>
     </header>
-    <main class="content">
+    <main>
       <section class="search">
         <div class="container">
-          <input placeholder="Поиск" type="text" />
+          <form action="">
+            <input class="search__input" placeholder="Поиск" type="text" />
+            <button class="search__icon"></button>
+          </form>
+        </div>
+      </section>
+      <section class="content">
+        <div class="container">
+          <div class="scales__item">
+            <h3 class="scales__title">Расширенная шкала степени инвалидизации (РШСИ)</h3>
+            <div class="scales__buttons">
+              <button class="btn">Заполнить онлайн</button>
+              <button class="btn btn-white">
+                Скачать бумажную версию
+                <img src="./images/icon-download.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="scales__item">
+            <h3 class="scales__title">Шкала</h3>
+            <div class="scales__buttons">
+              <button class="btn btn-white">
+                Скачать бумажную версию
+                <img src="./images/icon-download.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="scales__item">
+            <h3 class="scales__title">Шкала</h3>
+            <div class="scales__buttons">
+              <button class="btn btn-white">
+                Скачать бумажную версию
+                <img src="./images/icon-download.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="scales__item">
+            <h3 class="scales__title">Шкала</h3>
+            <div class="scales__buttons">
+              <button class="btn">Заполнить онлайн</button>
+              <button class="btn btn-white">
+                Скачать бумажную версию
+                <img src="./images/icon-download.svg" alt="" />
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <div class="footer-left">
+        <div class="footer__left">
           <h3>
             Медицинская ассоциация врачей и центров рассеянного склероза и других
             нейроиммунологических заболеваний
@@ -78,7 +123,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-right">
+        <div class="footer__right">
           <a class="logo" href="#">
             <img class="logo__img" src="./images/logo.svg" alt="Нейростатус" />
           </a>
