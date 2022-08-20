@@ -1,13 +1,19 @@
-.page {
+html,
+body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   margin: 0;
   box-sizing: border-box;
 }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 /* header */
 
-.header {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,16 +43,16 @@
   transition: 0.4s;
 }
 
-/* main */
+/* hero */
 
-.main {
+.hero {
   position: relative;
   z-index: 1;
   min-height: 800px;
   background-color: #2b2b2b;
 }
 
-.main.main::before {
+.hero::before {
   content: '';
   background-image: url(./images/Vector.svg);
   height: 600px;
@@ -59,9 +65,9 @@
   z-index: -1;
 }
 
-.main.main::after {
+.hero::after {
   content: '';
-  background-image: url(./images/main-background.svg);
+  background-image: url(./images/hero-background.svg);
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
@@ -77,12 +83,12 @@
   margin: 0 auto;
 }
 
-.container_place_main {
+.hero .container {
   padding: 200px 0 224px;
   position: relative;
 }
 
-.container_place_main::after {
+.container_place_hero::before {
   content: '';
   border-left: 1px solid #ffffff;
   position: absolute;
@@ -91,7 +97,7 @@
   left: 0;
 }
 
-.container_place_main::before {
+.container_place_hero::after {
   content: '';
   border-left: 1px solid #ffffff;
   position: absolute;
@@ -101,8 +107,7 @@
   z-index: 5;
 }
 
-.circle::before {
-  content: '';
+.circle {
   border: 1px solid #ffffff;
   border-radius: 50%;
   position: absolute;
@@ -113,7 +118,7 @@
   z-index: 5;
 }
 
-.main__title {
+.hero__title {
   color: #fff;
   font-weight: 700;
   font-size: 40px;
@@ -123,7 +128,7 @@
   width: 100%;
 }
 
-.main__subtitle {
+.hero__subtitle {
   color: #fff;
   font-weight: 300;
   font-size: 24px;
@@ -170,12 +175,12 @@
 
 /* footer */
 
-.footer {
+footer {
   background-color: #2b2b2b;
   padding: 100px 0;
 }
 
-.container_place_footer {
+footer .container {
   display: flex;
   justify-content: space-between;
 }
@@ -232,11 +237,14 @@
 }
 
 .social-link {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   padding: 10px;
   border: 1px solid #e5e5e5;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-right p {
@@ -256,7 +264,6 @@
 }
 
 /* search */
-
 .search {
-  max-height: 155px;
+  padding: 50px 0;
 }
