@@ -1,0 +1,155 @@
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .hero {
+    min-height: 600px;
+  }
+
+  .hero .container {
+    padding: 100px 0 124px;
+  }
+
+  .container_place_hero::before {
+    min-height: 90px;
+  }
+
+  .container_place_hero::after {
+    min-height: 120px;
+  }
+
+  .hero__title,
+  .main-info__title,
+  .main-info__subtitle {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .main-info {
+    padding: 150px 0;
+  }
+
+  .hero::before {
+    height: calc(600px * 0.75);
+    width: calc(345px * 0.75);
+    top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .header {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__menu.active {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #ccc;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+    gap: 30px;
+  }
+
+  .header__link {
+    color: #2b2b2b;
+  }
+
+  .hero__title,
+  .main-info__title,
+  .main-info__subtitle {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .main-info {
+    padding: 100px 0;
+  }
+
+  .footer .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer__right {
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .social-links {
+    justify-content: start;
+  }
+
+  .hero::before {
+    height: calc(600px * 0.5);
+    width: calc(345px * 0.5);
+    top: 50px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .logo__img {
+    width: calc(249px * 0.75);
+    height: calc(40px * 0.75);
+  }
+
+  .header {
+    padding: 30px 15px;
+  }
+
+  .hero .container {
+    padding: 100px 15px 124px;
+  }
+
+  .container_place_hero::before,
+  .container_place_hero::after,
+  .circle {
+    display: none;
+  }
+
+  .hero::before {
+    right: -60px;
+  }
+
+  .hero__title,
+  .main-info__title,
+  .main-info__subtitle {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
